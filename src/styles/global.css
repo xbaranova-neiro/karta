@@ -1081,6 +1081,8 @@
             .cta-banner { padding: 22px 16px; border-radius: 20px; }
             .cta-banner h3 { font-size: 1.15em; }
             .cta-banner p { font-size: 0.9em; }
+            .cta-buttons { flex-direction: column; width: 100%; }
+            .cta-buttons .cta-btn { width: 100%; box-sizing: border-box; text-align: center; }
             .cta-btn { padding: 14px 24px; font-size: 0.95em; }
             .cta-features { gap: 6px; }
             .cta-feature { font-size: 0.8em; padding: 5px 10px; }
@@ -1229,6 +1231,26 @@
             transform: translateY(-3px);
             border-color: rgba(6,182,212,0.45);
             background: rgba(6,182,212,0.16);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .webinar-invite-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .webinar-invite-actions .webinar-link {
+            margin-top: 0;
         }
 
         .cta-btn {

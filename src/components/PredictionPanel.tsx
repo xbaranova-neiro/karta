@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { BRAND, BRAND_URL } from '../config/brand';
+import { BRAND, BRAND_URL, WEBINAR_REGISTER_MAX_URL, WEBINAR_REGISTER_TELEGRAM_URL } from '../config/brand';
 import type { PromptCard } from '../types';
 import { pluralize } from '../utils/pluralize';
 
@@ -151,14 +151,27 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
 
           {card.special ? (
             <div id="webinarInvite">
-              <a
-                href="https://neiroguru.ru/?utm_source=tg&utm_medium=channel"
-                className="webinar-link"
-                target="_blank"
-                rel="noreferrer"
-              >
-                🎯 Хочешь ещё больше? Приходи на эфир по Вайбкодингу
-              </a>
+              <p style={{ marginBottom: 12, color: '#4a5568', fontWeight: 600 }}>
+                🎯 Хочешь ещё больше? Запишись на вебинар:
+              </p>
+              <div className="webinar-invite-actions">
+                <a
+                  href={WEBINAR_REGISTER_TELEGRAM_URL}
+                  className="webinar-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  РЕГИСТРАЦИЯ ТЕЛЕГРАМ 👉
+                </a>
+                <a
+                  href={WEBINAR_REGISTER_MAX_URL}
+                  className="webinar-link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  РЕГИСТРАЦИЯ МАХ 👉
+                </a>
+              </div>
               <p style={{ marginTop: 15, color: '#4a5568' }}>
                 Научись создавать проекты с AI за минуты, а не недели!
               </p>

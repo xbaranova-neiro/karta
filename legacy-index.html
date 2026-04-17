@@ -1069,6 +1069,8 @@
             .cta-banner { padding: 22px 16px; border-radius: 20px; }
             .cta-banner h3 { font-size: 1.15em; }
             .cta-banner p { font-size: 0.9em; }
+            .cta-buttons { flex-direction: column; width: 100%; }
+            .cta-buttons .cta-btn { width: 100%; box-sizing: border-box; text-align: center; }
             .cta-btn { padding: 14px 24px; font-size: 0.95em; }
             .cta-features { gap: 6px; }
             .cta-feature { font-size: 0.8em; padding: 5px 10px; }
@@ -1217,6 +1219,26 @@
             transform: translateY(-3px);
             border-color: rgba(6,182,212,0.45);
             background: rgba(6,182,212,0.16);
+        }
+
+        .cta-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .webinar-invite-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+        }
+
+        .webinar-invite-actions .webinar-link {
+            margin-top: 0;
         }
 
         .cta-btn {
@@ -1423,7 +1445,10 @@
                 <span class="cta-feature">🎯 Пошаговые инструкции</span>
                 <span class="cta-feature">💰 Как на этом зарабатывать</span>
             </div>
-            <a href="https://neiroguru.ru/?utm_source=tg&utm_medium=channel" class="cta-btn" target="_blank">Записаться на вебинар →</a>
+            <div class="cta-buttons">
+                <a href="https://proneiro.site/" class="cta-btn" target="_blank">РЕГИСТРАЦИЯ ТЕЛЕГРАМ →</a>
+                <a href="https://proneiro.site/" class="cta-btn" target="_blank">РЕГИСТРАЦИЯ МАХ →</a>
+            </div>
             <div class="cta-subtext">Бесплатно · Онлайн · Без опыта в коде</div>
         </div>
     </div>
@@ -1961,9 +1986,13 @@
                 if (selectedCardData.special) {
                     predContainer.classList.add('special-card');
                     webinarInvite.innerHTML = `
-                        <a href="https://neiroguru.ru/?utm_source=tg&utm_medium=channel" class="webinar-link" target="_blank">
-                            🎯 Хочешь ещё больше? Приходи на эфир по kodakode
-                        </a>
+                        <p style="margin-bottom: 12px; color: #4a5568; font-weight: 600;">
+                            🎯 Хочешь ещё больше? Запишись на вебинар:
+                        </p>
+                        <div class="webinar-invite-actions">
+                            <a href="https://proneiro.site/" class="webinar-link" target="_blank">РЕГИСТРАЦИЯ ТЕЛЕГРАМ 👉</a>
+                            <a href="https://proneiro.site/" class="webinar-link" target="_blank">РЕГИСТРАЦИЯ МАХ 👉</a>
+                        </div>
                         <p style="margin-top: 15px; color: #4a5568;">
                             Научись создавать проекты с AI за минуты, а не недели!
                         </p>

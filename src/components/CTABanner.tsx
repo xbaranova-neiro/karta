@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { WEBINAR_REGISTER_MAX_URL, WEBINAR_REGISTER_TELEGRAM_URL } from '../config/brand';
 
 export function CTABanner() {
   return (
@@ -19,14 +20,19 @@ export function CTABanner() {
           💰 Как на этом зарабатывать
         </motion.span>
       </div>
-      <a
-        href="https://neiroguru.ru/?utm_source=tg&utm_medium=channel"
-        className="cta-btn"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Записаться на вебинар →
-      </a>
+      <div className="cta-buttons">
+        <a
+          href={WEBINAR_REGISTER_TELEGRAM_URL}
+          className="cta-btn"
+          target="_blank"
+          rel="noreferrer"
+        >
+          РЕГИСТРАЦИЯ ТЕЛЕГРАМ →
+        </a>
+        <a href={WEBINAR_REGISTER_MAX_URL} className="cta-btn" target="_blank" rel="noreferrer">
+          РЕГИСТРАЦИЯ МАХ →
+        </a>
+      </div>
       <div className="cta-subtext">Бесплатно · Онлайн · Без опыта в коде</div>
     </section>
   );
