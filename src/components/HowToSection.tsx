@@ -1,4 +1,4 @@
-import { BRAND, BRAND_URL } from '../config/brand';
+import { BRAND, BRAND_URL, BRAND_WORK_INSTRUCTION_URL } from '../config/brand';
 
 export function HowToSection() {
   return (
@@ -26,7 +26,7 @@ export function HowToSection() {
           <div className="step-num">3</div>
           <div className="step-text">
             Дальше следуй инструкции по работе с {BRAND} —{' '}
-            <a href={BRAND_URL} target="_blank" rel="noreferrer">
+            <a href={BRAND_WORK_INSTRUCTION_URL} target="_blank" rel="noreferrer">
               по ссылке
             </a>
             .

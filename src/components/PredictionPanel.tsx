@@ -1,6 +1,12 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { BRAND, BRAND_URL, WEBINAR_REGISTER_MAX_URL, WEBINAR_REGISTER_TELEGRAM_URL } from '../config/brand';
+import {
+  BRAND,
+  BRAND_URL,
+  BRAND_WORK_INSTRUCTION_URL,
+  WEBINAR_REGISTER_MAX_URL,
+  WEBINAR_REGISTER_TELEGRAM_URL,
+} from '../config/brand';
 import type { PromptCard } from '../types';
 import { pluralize } from '../utils/pluralize';
 
@@ -124,7 +130,7 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
               <div className="step-num">3</div>
               <div className="step-text">
                 Дальше следуй инструкции по работе с {BRAND} —{' '}
-                <a href={BRAND_URL} target="_blank" rel="noreferrer">
+                <a href={BRAND_WORK_INSTRUCTION_URL} target="_blank" rel="noreferrer">
                   по ссылке
                 </a>
                 .
