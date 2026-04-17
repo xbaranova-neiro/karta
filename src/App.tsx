@@ -132,11 +132,11 @@ export default function App() {
         </MotionReveal>
 
         <main id="main-content">
-          <MotionReveal className="reveal-on-scroll reveal-delay-2">
-            <section aria-label="Ежедневный промпт">
-              {!canPlay ? (
-                <ComeTomorrow streak={gameData.streak} />
-              ) : (
+          <section aria-label="Ежедневный промпт">
+            {!canPlay ? (
+              <ComeTomorrow streak={gameData.streak} />
+            ) : (
+              <MotionReveal className="reveal-on-scroll reveal-delay-2">
                 <>
                   <AnimatePresence>
                     {!showPrediction ? (
@@ -168,9 +168,9 @@ export default function App() {
                     />
                   ) : null}
                 </>
-              )}
-            </section>
-          </MotionReveal>
+              </MotionReveal>
+            )}
+          </section>
 
           <MotionReveal>
             <CollectionSection data={gameData} onOpenCard={openModal} />

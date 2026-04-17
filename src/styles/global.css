@@ -599,8 +599,16 @@
             50% { background-position: 100% 50%; }
         }
 
-        #timeLeft {
+        /* Текст в span не наследует градиент родителя с background-clip: text — без этого
+           цифры остаются «прозрачными» и не видны (WebKit). */
+        .countdown #timeLeft {
             display: inline-block;
+            -webkit-text-fill-color: #e0f2fe;
+            color: #e0f2fe;
+            background: none;
+            -webkit-background-clip: unset;
+            background-clip: unset;
+            text-shadow: 0 0 18px rgba(34, 211, 238, 0.45);
             animation: tickPulse 1s ease-in-out infinite;
         }
 
@@ -1316,8 +1324,6 @@
         .prediction-container.show .steps-block > .step:nth-child(3) { animation-delay: 0.1s; }
         .prediction-container.show .steps-block > .step:nth-child(4) { animation-delay: 0.15s; }
         .prediction-container.show .steps-block > .step:nth-child(5) { animation-delay: 0.2s; }
-        .prediction-container.show .steps-block > .step:nth-child(6) { animation-delay: 0.25s; }
-        .prediction-container.show .steps-block > .step:nth-child(7) { animation-delay: 0.3s; }
 
         @keyframes stepLineIn {
             from { opacity: 0; transform: translateX(-12px); }
@@ -1344,7 +1350,7 @@
             .streak-fire { animation: none; }
             .come-tomorrow { animation: none; }
             .countdown { animation: none; }
-            #timeLeft { animation: none; }
+            .countdown #timeLeft { animation: none; }
             .collection h3,
             .how-to-block h3 { animation: none; }
             .modal-overlay.active .modal-emoji { animation: none; }

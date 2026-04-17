@@ -123,28 +123,18 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
             <div className="step">
               <div className="step-num">3</div>
               <div className="step-text">
-                Кликни в поле ввода внизу страницы, нажми <code>Ctrl+V</code> (на Маке —{' '}
-                <code>Cmd+V</code>) и отправь сообщение
+                Дальше следуй инструкции по работе с {BRAND} —{' '}
+                <a href={BRAND_URL} target="_blank" rel="noreferrer">
+                  по ссылке
+                </a>
+                .
               </div>
             </div>
             <div className="step">
               <div className="step-num">4</div>
               <div className="step-text">
-                Подожди 10-30 секунд — {BRAND} сгенерирует готовый файл и покажет превью прямо в чате
-              </div>
-            </div>
-            <div className="step">
-              <div className="step-num">5</div>
-              <div className="step-text">
-                Нажми кнопку <strong>«Скачать»</strong> (или <strong>Download</strong>) — файл
-                сохранится к тебе на компьютер
-              </div>
-            </div>
-            <div className="step">
-              <div className="step-num">6</div>
-              <div className="step-text">
-                Открой скачанный файл двойным кликом — он запустится в браузере. <strong>Готово!</strong>{' '}
-                🎉
+                Кликни в поле ввода внизу страницы, нажми <code>Ctrl+V</code> (на Маке —{' '}
+                <code>Cmd+V</code>) и отправь сообщение
               </div>
             </div>
           </div>
