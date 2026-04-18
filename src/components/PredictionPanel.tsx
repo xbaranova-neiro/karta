@@ -122,30 +122,18 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
                 Открой{' '}
                 <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
                   <strong>{GIGACODE}</strong>
-                </a>{' '}
-                (страница на GitVerse) и вставь промпт в CodeChat, когда GigaCode подключён. Нет доступа
-                — зарегайся, как в инструкциях к сервису.
-              </div>
-            </div>
-            <div className="step">
-              <div className="step-num">3</div>
-              <div className="step-text">
-                Следуй инструкциям: видеоурок на RUTUBE —{' '}
-                <a href={GIGACODE_VIDEO_URL} target="_blank" rel="noreferrer">
-                  урок, по ссылке
-                </a>
-                ; раздел {GIGACODE} —{' '}
-                <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
-                  сайт, по ссылке
                 </a>
                 .
               </div>
             </div>
             <div className="step">
-              <div className="step-num">4</div>
+              <div className="step-num">3</div>
               <div className="step-text">
-                Кликни в поле ввода CodeChat, вставь промпт (<code>Ctrl+V</code> / <code>Cmd+V</code>)
-                и отправь сообщение (<code>Enter</code>)
+                Следуй инструкции —{' '}
+                <a href={GIGACODE_VIDEO_URL} target="_blank" rel="noreferrer">
+                  урок по ссылке
+                </a>
+                .
               </div>
             </div>
           </div>
