@@ -1,9 +1,9 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import {
-  BRAND,
-  BRAND_URL,
-  BRAND_WORK_INSTRUCTION_URL,
+  GIGACODE,
+  GIGACODE_LANDING_URL,
+  GIGACODE_VIDEO_URL,
   WEBINAR_REGISTER_MAX_URL,
   WEBINAR_REGISTER_TELEGRAM_URL,
 } from '../config/brand';
@@ -97,7 +97,7 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
             />
           </div>
 
-          <div className="prompt-label">Скопируй и вставь в {BRAND}:</div>
+          <div className="prompt-label">Скопируй и вставь в {GIGACODE}:</div>
           <div className="prompt-text">{card.prompt}</div>
           <button
             type="button"
@@ -120,18 +120,23 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
               <div className="step-num">2</div>
               <div className="step-text">
                 Открой{' '}
-                <a href={BRAND_URL} target="_blank" rel="noreferrer">
-                  <strong>{BRAND}</strong>
+                <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
+                  <strong>{GIGACODE}</strong>
                 </a>{' '}
-                и вставь промпт в чат. Если нет аккаунта — зарегайся бесплатно (нужна только почта)
+                (страница на GitVerse) и вставь промпт в CodeChat, когда GigaCode подключён. Нет доступа
+                — зарегайся, как в инструкциях к сервису.
               </div>
             </div>
             <div className="step">
               <div className="step-num">3</div>
               <div className="step-text">
-                Дальше следуй инструкции по работе с {BRAND} —{' '}
-                <a href={BRAND_WORK_INSTRUCTION_URL} target="_blank" rel="noreferrer">
-                  по ссылке
+                Следуй инструкциям: видеоурок на RUTUBE —{' '}
+                <a href={GIGACODE_VIDEO_URL} target="_blank" rel="noreferrer">
+                  урок, по ссылке
+                </a>
+                ; раздел {GIGACODE} —{' '}
+                <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
+                  сайт, по ссылке
                 </a>
                 .
               </div>
@@ -139,8 +144,8 @@ export function PredictionPanel({ visible, card, streakAfterPick }: Props) {
             <div className="step">
               <div className="step-num">4</div>
               <div className="step-text">
-                Кликни в поле ввода внизу страницы, нажми <code>Ctrl+V</code> (на Маке —{' '}
-                <code>Cmd+V</code>) и отправь сообщение
+                Кликни в поле ввода CodeChat, вставь промпт (<code>Ctrl+V</code> / <code>Cmd+V</code>)
+                и отправь сообщение (<code>Enter</code>)
               </div>
             </div>
           </div>

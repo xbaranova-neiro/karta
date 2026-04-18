@@ -63,7 +63,7 @@ export const PROMPT_CARDS: PromptCard[] = [
                 title: "Таск-трекер",
                 prompt: "Создай красивый таск-трекер (to-do приложение). Добавление задач, отметка выполненных (зачёркивание с анимацией), удаление свайпом, фильтры: все/активные/выполненные, счётчик оставшихся задач, сохранение в localStorage. Дизайн: glassmorphism, тёмная тема, плавные анимации. Выдай готовый HTML-файл для скачивания.",
                 preview: `<div style="padding:8px 0 4px">
-                    <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:6px;padding:7px 10px;margin-bottom:5px"><div style="width:14px;height:14px;border-radius:50%;border:2px solid #22c55e;display:flex;align-items:center;justify-content:center;font-size:8px;color:#22c55e">✓</div><div style="font-size:8px;color:#6b7280;text-decoration:line-through">Изучить kodakode</div></div>
+                    <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:6px;padding:7px 10px;margin-bottom:5px"><div style="width:14px;height:14px;border-radius:50%;border:2px solid #22c55e;display:flex;align-items:center;justify-content:center;font-size:8px;color:#22c55e">✓</div><div style="font-size:8px;color:#6b7280;text-decoration:line-through">Изучить GigaCode</div></div>
                     <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:6px;padding:7px 10px;margin-bottom:5px"><div style="width:14px;height:14px;border-radius:50%;border:2px solid #7c3aed"></div><div style="font-size:8px;color:#e5e7eb">Сделать лендинг</div></div>
                     <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.05);border-radius:6px;padding:7px 10px"><div style="width:14px;height:14px;border-radius:50%;border:2px solid #7c3aed"></div><div style="font-size:8px;color:#e5e7eb">Запустить бота</div></div>
                 </div>`
@@ -191,10 +191,10 @@ export const SPECIAL_CARD: PromptCard = {
             id: 13,
             emoji: "👑",
             title: "Секретный Мега-промпт",
-            prompt: "Ты — мой персональный kodakode-ассистент. Я буду описывать идеи на простом языке, а ты создаёшь полноценный код. Правила: 1) Всегда выдавай готовый HTML-файл для скачивания, без внешних зависимостей, 2) Современный дизайн с тёмной темой и градиентами, 3) Мобильная адаптация, 4) CSS-анимации и микроинтеракции, 5) Комментарии на русском. Начнём: создай мне сервис для генерации бизнес-идей — пользователь выбирает нишу, бюджет и навыки, а приложение выдаёт 3 персональные идеи с планом действий на неделю.",
+            prompt: "Ты — мой персональный GigaCode-ассистент. Я буду описывать идеи на простом языке, а ты создаёшь полноценный код. Правила: 1) Всегда выдавай готовый HTML-файл для скачивания, без внешних зависимостей, 2) Современный дизайн с тёмной темой и градиентами, 3) Мобильная адаптация, 4) CSS-анимации и микроинтеракции, 5) Комментарии на русском. Начнём: создай мне сервис для генерации бизнес-идей — пользователь выбирает нишу, бюджет и навыки, а приложение выдаёт 3 персональные идеи с планом действий на неделю.",
             special: true,
             preview: `<div style="padding:8px 0 4px;text-align:center">
-                <div style="font-size:10px;color:#fbbf24;margin-bottom:6px;font-weight:700">✨ kodakode-ассистент ✨</div>
+                <div style="font-size:10px;color:#fbbf24;margin-bottom:6px;font-weight:700">✨ GigaCode-ассистент ✨</div>
                 <div style="background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:8px;padding:8px;text-align:left">
                     <div style="font-size:7px;color:#fbbf24;margin-bottom:4px">Ты описываешь:</div>
                     <div style="font-size:8px;color:#fde68a;margin-bottom:6px">«Хочу сервис бизнес-идей»</div>

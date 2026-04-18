@@ -1,4 +1,4 @@
-import { BRAND, BRAND_URL, BRAND_WORK_INSTRUCTION_URL } from '../config/brand';
+import { GIGACODE, GIGACODE_LANDING_URL, GIGACODE_VIDEO_URL } from '../config/brand';
 
 export function HowToSection() {
   return (
@@ -16,18 +16,23 @@ export function HowToSection() {
           <div className="step-num">2</div>
           <div className="step-text">
             Открой{' '}
-            <a href={BRAND_URL} target="_blank" rel="noreferrer">
-              <strong>{BRAND}</strong>
+            <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
+              <strong>{GIGACODE}</strong>
             </a>{' '}
-            и вставь промпт в чат. Если нет аккаунта — зарегайся бесплатно
+            (страница на GitVerse) и вставь промпт в CodeChat, когда GigaCode подключён. Нет доступа
+            — зарегайся, как в инструкциях к сервису.
           </div>
         </div>
         <div className="step">
           <div className="step-num">3</div>
           <div className="step-text">
-            Дальше следуй инструкции по работе с {BRAND} —{' '}
-            <a href={BRAND_WORK_INSTRUCTION_URL} target="_blank" rel="noreferrer">
-              по ссылке
+            Следуй инструкциям: видеоурок на RUTUBE —{' '}
+            <a href={GIGACODE_VIDEO_URL} target="_blank" rel="noreferrer">
+              урок, по ссылке
+            </a>
+            ; раздел {GIGACODE} —{' '}
+            <a href={GIGACODE_LANDING_URL} target="_blank" rel="noreferrer">
+              сайт, по ссылке
             </a>
             .
           </div>
@@ -35,8 +40,8 @@ export function HowToSection() {
         <div className="step">
           <div className="step-num">4</div>
           <div className="step-text">
-            Кликни в поле ввода, вставь промпт (<code>Ctrl+V</code> / <code>Cmd+V</code>) и нажми{' '}
-            <strong>Enter</strong>
+            Кликни в поле ввода CodeChat, вставь промпт (<code>Ctrl+V</code> / <code>Cmd+V</code>) и
+            нажми <strong>Enter</strong>
           </div>
         </div>
       </div>

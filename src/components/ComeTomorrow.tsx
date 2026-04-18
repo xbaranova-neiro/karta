@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { BRAND } from '../config/brand';
+import { GIGACODE } from '../config/brand';
 import { useMidnightCountdown } from '../hooks/useMidnightCountdown';
 import { pluralize } from '../utils/pluralize';
 
@@ -20,7 +20,7 @@ export function ComeTomorrow({ streak }: Props) {
     >
       <h2>⏳ Возвращайся завтра!</h2>
       <p>
-        Ты уже получил свой промпт на сегодня. Вставь его в {BRAND} и смотри магию!
+        Ты уже получил свой промпт на сегодня. Вставь его в {GIGACODE} и смотри магию!
       </p>
       <p className="countdown">
         ⏰ Новый промпт через <span id="timeLeft">{timeLeft}</span>
